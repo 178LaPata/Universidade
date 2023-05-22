@@ -34,13 +34,26 @@ float multInt3 (int n, float m, int *count){
     return r;
 }
 
-int mdc1 (int a, int b){
+int mdc1(int a, int b) {
+    int menor, mdc;
+    if (a < b) {
+        menor = a;
+    } else {
+        menor = b;
+    }
+    for (int i = menor; i >= 1; i--) {
+        if (a % i == 0 && b % i == 0) {
+            mdc = i;
+            break;
+        }
+    }
+    return mdc;
+}
 
-    return 0;
-}
 int mdc2 (int a, int b){
-    return 0;
+    return 0;   
 }
+
 int mdc3 (int a, int b, int *count){
     return 0;
 }
@@ -62,20 +75,21 @@ int main()
         c1=0, c2=0;
     float f, f1, f2, f3;
         
-    printf ("Introduza dois números para input das funções de multiplicação: ");
-    scanf ("%d", &a); scanf ("%f", &f);
-    f1 = multInt1 (a,f);
-    f2 = multInt2 (a,f);
-    f3 = multInt3 (a,f, &c1);
-    printf ("Resultados das multiplicações: %f, %f, %f (%d)\n", f1, f2, f3, c1);
-    //
-    //printf ("Introduza dois números para input das funções de multiplicaç~ão: ");
-    //scanf ("%d", &a); scanf ("%d", &b);
-    //
-    //r1 = mdc1 (a,b);
-    //r2 = mdc2 (a,b);
+    //printf ("Introduza dois números: ");
+    //scanf ("%d", &a); scanf ("%f", &f);
+    //f1 = multInt1 (a,f);
+    //f2 = multInt2 (a,f);
+    //f3 = multInt3 (a,f, &c1);
+    //printf ("Resultados das multiplicações: %f, %f, %f (%d)\n", f1, f2, f3, c1);
+    
+    printf ("Introduza dois números: ");
+    scanf ("%d", &a); scanf ("%d", &b);
+    
+    r1 = mdc1 (a,b);
+    r2 = mdc2 (a,b);
     //r3 = mdc3 (a,b, &c1);
     //r4 = mdc4 (a,b, &c2);
+    printf ("Resultados do mdc: %d, %d\n", r1, r2);
     //printf ("Resultados do mdc: %d, %d, %d (%d), %d (%d)\n", r1, r2, r3, c1, r4, c2);
     //
     //printf ("Introduza um número para calcular o fib: ");
