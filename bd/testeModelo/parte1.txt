@@ -1,0 +1,80 @@
+1.
+Uma super chave é um conjunto de atributos que identifica de forma unica cada tuplo de uma tabela.
+
+O erro acontece quando ha um erro devido a ma definicao da chave primaria, 
+por exemplo, uma chave primaria que identifique mais que um tuplo(linha) na tabela 
+nessa tabela sera necessario haver uma super chave que identifique cada tuplo de forma unica.
+
+2.
+Os processos de combinação de dados entre duas tabelas usando operações de junção externa 
+são comumente utilizados quando se deseja combinar informações de tabelas relacionadas, 
+mesmo quando não há correspondência entre os valores-chave nas tabelas. Isso permite 
+recuperar informações de ambas as tabelas, mesmo quando não há correspondência direta entre elas.
+
+Os tipos de junção externa que existem são:
+Junção externa esquerda (LEFT OUTER JOIN): Retorna todos os registros da tabela 
+da esquerda (tabela A) e os registros correspondentes da tabela da direita (tabela B). 
+Se não houver correspondência na tabela da direita, os valores serão nulos.
+
+Junção externa direita (RIGHT OUTER JOIN): Retorna todos os registros da tabela da 
+direita (tabela B) e os registros correspondentes da tabela da esquerda (tabela A). 
+Se não houver correspondência na tabela da esquerda, os valores serão nulos.
+
+Junção externa completa (FULL OUTER JOIN): Retorna todos os registros das duas
+tabelas, combinando registros correspondentes quando existem e preenchendo com 
+valores nulos quando não há correspondência.
+
+3. 
+Uma chave estrangeira é o conjunto de atributos que faz referencia a uma chave primaria de outra tabela.
+Utilidade da chave estrangeira é a de fazer referencia a uma chave primaria de outra tabela,
+para que assim seja possivel fazer a ligação entre as tabelas.
+
+5.
+Exigência de dados: alguns atributos devem conter sempre
+um valor válido, isto é não devem aceitar valores nulos. 
+
+Integridade de entidades: a chave primária de uma relação
+não pode admitir valores nulos; este tipo de restrição deve
+ser considerado no momento em que se faz a definição
+das chaves primárias para cada tipo de entidade.
+
+Restrições de domínios de atributos: qualquer atributo
+tem um domínio, ou seja um conjunto de valores dos quais
+o atributo poderá assumir um; estas restrições devem ser
+identificados no momento da escolha dos domínios.
+
+6.
+A 3FN consiste em eliminar dependências transitivas, ou seja,
+dependências entre atributos que não sejam chave primária.
+Para que uma tabela esteja na 3FN, ela deve estar na 2FN e
+na 1FN.
+
+Exemplo:
+A tabela Aluno está na 1FN, pois não há atributos multivalorados
+e nem atributos compostos. Está na 2FN, pois não há dependências
+parciais. Porém, não está na 3FN, pois há dependência transitiva
+entre o atributo Curso e o atributo Coordenador. Para resolver
+isso, basta criar uma nova tabela, com os atributos Curso e
+Coordenador, e fazer a relação entre as tabelas Aluno e Curso
+através do atributo Curso.
+
+Tabela: Aluno
+Matricula (PK) Nome     Curso       Coordenador
+1              João     Sistemas    Maria
+2              Maria    Sistemas    Maria
+3              José     Direito     Pedro
+4              Pedro    Direito     Pedro
+
+Tabela: Curso
+Curso       Coordenador
+Sistemas    Maria
+Direito     Pedro
+
+Tabela: Aluno
+Matricula (PK) Nome     Curso (FK)
+1              João     Sistemas
+2              Maria    Sistemas
+3              José     Direito
+4              Pedro    Direito
+
+

@@ -1,0 +1,4 @@
+1.
+Uma chave primaria consiste numa ou mais colunas cujos dados 
+contidos são usados para identificar exclusivamente cada 
+linha na tabela.

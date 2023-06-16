@@ -1,0 +1,13 @@
+1.
+Dados são um conjunto de factos discretos acerca de um dado conjunto de eventos, 
+que não apresentam qualquer tipo de estrutura ou organização em particular.
+
+Informação aparece ao se definir o contexto dos dados e costuma 
+responder a questões como ‘O quê?’, ‘Porquê?’, ‘Onde?,
+‘Quando?’ ou ‘Quem?’. Pode ser vista como um pacote 
+de dados estruturados que lhe acrescenta significado.
+
+A principal diferença entre dados e informações é que os dados são matérias-primas 
+que devem ser processadas e as informações são os dados processados.
+
+2.
