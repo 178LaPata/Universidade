@@ -1,0 +1,60 @@
+
+tipo: problema de estado único 
+representação do estado: nodo em que o agente de pesquisa se encontra (nodo atual)
+estado inicial: nodo S
+estado final: nodo T
+operadores: o agente de pesquisa pode mover se de um nodo para o outro
+    pré-condição: os nodos tem de ser ajacentes
+    efeitos: o agente passa do nodo atual para um nodo ajacente
+custo da solução: soma das distancias das arestas percorridas até ao fim
+
+DFS -> algoritmo de pesquisa não informada que explora todas as ramificações de um nó até
+o seu final antes de passa para o próximo nó. O DFS utiliza uma stack para armazenar os
+nós que devem ser visitados em seguida, adicionando sempre os filhos dos nós no topo da pilha
+
+BFS -> algoritmo de pesquisa não informada que explora todos os nós de um nível antes de 
+passar para o próximo nível. O BFS utuliza uma queue para armazenar os nós que devem ser 
+visitados em seguida, adicionando sempre os filhos no final da fila
+
+Greedy -> algoritmo de pesquisa informada que escolhe sempre expandir o nó que parece 
+mais perto da solução. Essa escolha é feita com base numa função de avaliação que 
+estima o custo da solução a partir de cada nó. A Greedy escolhe sempre o nó com
+menor estimativa de custo, na expectativa de encontrar a solução mais rapidamente
+
+A* -> algoritmo de pesquisa informada que combina a greedy com a uniforme, minimizando
+a soma do caminho já efetuada com o minimo previsto do que falta até a solução. A função
+de avaliação final é f(n)=g(n)+h(n), em que g(n) é o custo total, até agora, para chegar 
+ao estado n (custo do percurso) e h(n) é o custo estimado para chegar ao objetivo (heuristica)
+
+MiniMax -> o max começa sempre para um estado de valor máximo (escolhe sempre o maior valor)
+e o min prefere passar para um estado de valor minimo (escolhe sempre o menor valor)
+
+Custo Uniforme -> algoritmo de pesquisa não informada que escolhe sempre expandir o nó
+com menor custo da lista de estados não expandidos. Cada nó guarda o custo total desde o
+nó inicial até si (equivalente ao BFS se os custos forem todos iguais)
+
+Iterativa -> algoritmo de pesquisa não informada que vai procurar em profundidade 
+limitada, iterativamente, aumentando sempre o limite
+
+Bidirecional -> algoritmo de pesquisa não informada que executa uma procura para 
+a frente desde o estado inicial e para trás desde o estado objetivo, simultaneamente
+
+SOLUÇÃO ÚNICA
+
+Hill-Climbing Search -> é um algoritmo que se resume a encontrar soluções locais, isto é, 
+tenta encontrar soluções candidatas (não ótimas) ao problema. 
+
+(Em termos de Exploration, é o estado atual visitar os estados "vizinhos". 
+Em termos de Exploitation é se este novo estado é aceite ou não. Caso a solução seja melhor nesse 
+estado "vizinho", o algoritmo vai admitir então esse novo estado e avançar então com o resto 
+da exploração.)
+
+Simulated Annealing -> semelhante ao Hill-Climbing Search mas pode explorar vizinhos piores
+Com o tempo (diminuição da temperatura), o algoritmo passa a comportar se como o de 
+Hill-Climbing Search
+
+Tabu Search -> semelhante ao Hill-Climbing Search mas elimina os vizinhos piores. A ideia 
+básica é penalizar movimentos que levam a solução para espaços de procura visitados
+anteriormente. No entanto, aceita de forma deterministica doluçoes que nao melhoram para evitar 
+ficar presa em minimos locais
+
