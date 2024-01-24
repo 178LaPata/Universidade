@@ -7,6 +7,8 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Map;
 
+import HPC;
+
 public class Server {
     private ServerSocket socket;
     private HPC hpc;

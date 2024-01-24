@@ -63,7 +63,7 @@ public class Server {
                         out.writeBoolean(atendido);
                     }
 
-                } catch (IOException e) {
+                } catch (IOException | InterruptedException e) {
                     e.printStackTrace();
                 }
             }

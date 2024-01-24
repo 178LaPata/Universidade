@@ -1,0 +1,29 @@
+1.
+o formato de texto é:
+    - facil de ler por humanos
+    - robusto
+    - redundante 
+    - lento para dar parse
+    - mais facil de dar debug
+
+o formato binario é:
+    - mais compacto e eficiente
+    - mais dificil de dar debug
+    - mais frágil, isto é se tiver um pequeno erro pode fazer com que tudo falhe
+
+2.
+transparência de acesso é quando nao é possivel distinguir se 
+o servico que estamos a usar é local ou remoto
+
+os sistemas de invocacao remota escondem a distribuicao de servico 
+ou seja permite codigo que temos use um sevico local que possa ser facilmente convertido 
+num codigo que usa um servico que reside num sistema remoto
+
+3.
+a principal dificuldade é manter uma latencia baixa e aceitavel para todos os clientes independentemente
+de onde se encontram geograficamente
+uma forma de a resolver seria com servidores distribuídos(varios servidores implementados em sitios diferentes)
+e replicação de dados(replicar os dados em varios servidores de maneira a obter uma resposta do servidor 
+mais proximo, aka menos latencia)
+
+
