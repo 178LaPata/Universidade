@@ -1,0 +1,325 @@
+{
+  "statistics": [
+    {
+      "id": "1",
+      "red": 1,
+      "yellow": 4,
+      "draw": 1
+    }
+  ],
+  "games": [
+    {
+      "id": "e048",
+      "date": "2024-04-08T14:47:16.010Z",
+      "game": {
+        "tabuleiro": [
+          [
+            false,
+            false,
+            true
+          ],
+          [
+            true,
+            false,
+            true
+          ],
+          [
+            true,
+            false
+          ],
+          [
+            true,
+            false
+          ],
+          [
+            false
+          ],
+          [],
+          []
+        ],
+        "jogadorAJogar": true,
+        "vencedor": 1,
+        "terminado": true
+      }
+    },
+    {
+      "id": "49f9",
+      "date": "2024-04-08T14:49:32.276Z",
+      "game": {
+        "tabuleiro": [
+          [
+            true,
+            false,
+            true
+          ],
+          [
+            true,
+            false,
+            false,
+            true,
+            true,
+            false
+          ],
+          [
+            false,
+            true,
+            true
+          ],
+          [
+            true,
+            false,
+            false,
+            true,
+            false,
+            false
+          ],
+          [
+            true,
+            true,
+            false
+          ],
+          [
+            false,
+            true,
+            false,
+            false,
+            true
+          ],
+          [
+            true,
+            false,
+            false,
+            true
+          ]
+        ],
+        "jogadorAJogar": true,
+        "vencedor": 1,
+        "terminado": true
+      }
+    },
+    {
+      "id": "13e1",
+      "date": "2024-04-08T14:49:43.029Z",
+      "game": {
+        "tabuleiro": [
+          [
+            true,
+            false,
+            true,
+            false
+          ],
+          [
+            true,
+            false,
+            true,
+            false,
+            false
+          ],
+          [
+            true,
+            true,
+            false,
+            true,
+            true
+          ],
+          [
+            false,
+            true,
+            true,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            true
+          ],
+          [
+            true,
+            true,
+            false,
+            true
+          ],
+          [
+            false,
+            true,
+            false
+          ]
+        ],
+        "jogadorAJogar": false,
+        "vencedor": 0,
+        "terminado": true
+      }
+    },
+    {
+      "id": "c86b",
+      "date": "2024-04-08T14:49:50.364Z",
+      "game": {
+        "tabuleiro": [
+          [],
+          [
+            false,
+            true,
+            false
+          ],
+          [
+            true,
+            true,
+            false,
+            true
+          ],
+          [
+            false,
+            false
+          ],
+          [
+            true,
+            false,
+            false
+          ],
+          [
+            false,
+            true,
+            true,
+            false,
+            true
+          ],
+          [
+            false,
+            true,
+            false,
+            true,
+            false,
+            true
+          ]
+        ],
+        "jogadorAJogar": true,
+        "vencedor": 1,
+        "terminado": true
+      }
+    },
+    {
+      "id": "758b",
+      "date": "2024-04-08T16:08:35.233Z",
+      "game": {
+        "tabuleiro": [
+          [
+            false,
+            true,
+            false,
+            false,
+            true,
+            true
+          ],
+          [
+            true,
+            false,
+            true,
+            true,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            true,
+            false,
+            true,
+            true
+          ],
+          [
+            false,
+            false,
+            true
+          ],
+          [
+            true,
+            true,
+            false
+          ],
+          [
+            true,
+            false,
+            true,
+            false
+          ],
+          [
+            false,
+            true,
+            false
+          ]
+        ],
+        "jogadorAJogar": true,
+        "vencedor": 1,
+        "terminado": true
+      }
+    },
+    {
+      "id": "5995",
+      "date": "2024-04-08T16:10:51.791Z",
+      "game": {
+        "tabuleiro": [
+          [
+            true,
+            false,
+            true,
+            true,
+            false,
+            false
+          ],
+          [
+            false,
+            true,
+            false,
+            false,
+            false,
+            true
+          ],
+          [
+            true,
+            false,
+            true,
+            true,
+            true,
+            false
+          ],
+          [
+            false,
+            true,
+            false,
+            false,
+            false,
+            true
+          ],
+          [
+            true,
+            false,
+            true,
+            true,
+            true,
+            false
+          ],
+          [
+            false,
+            true,
+            false,
+            false,
+            false,
+            true
+          ],
+          [
+            true,
+            false,
+            true,
+            true,
+            true,
+            false
+          ]
+        ],
+        "jogadorAJogar": true,
+        "vencedor": 2,
+        "terminado": true
+      }
+    }
+  ]
+}

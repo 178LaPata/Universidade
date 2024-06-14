@@ -1,0 +1,64 @@
+extends layout
+
+block content
+    .w3-card-4
+        header.w3-container.w3-cyan
+            h1= title
+        .w3-container
+            ul.w3-ul
+                li 
+                    b ID: 
+                    | #{planta.id}
+                li 
+                    b Número de Registo: 
+                    | #{planta.Nr_Registo}
+                li 
+                    b Código da Rua: 
+                    | #{planta.Cod_Rua}
+                li 
+                    b Rua: 
+                    | #{planta.Rua}
+                li 
+                    b Local: 
+                    | #{planta.Local}
+                li 
+                    b Freguesia: 
+                    | #{planta.Freguesia}
+                li
+                    b Espécie: 
+                    | #{planta.especie}
+                li
+                    b Nome Científico: 
+                    | #{planta.Nome_Cientifico}
+                li
+                    b Origem: 
+                    | #{planta.Origem}
+                li
+                    b Data de Plantação: 
+                    | #{planta.Data_Plantacao}
+                li
+                    b Estado: 
+                    | #{planta.Estado}
+                li
+                    b Caldeira: 
+                    | #{planta.Caldeira}
+                li
+                    b Tutor: 
+                    | #{planta.Tutor}
+                li
+                    b Implantação: 
+                    | #{planta.Implantacao}
+                li
+                    b Gestor: 
+                    | #{planta.Gestor}
+                li 
+                    b Data de Atualização: 
+                    | #{planta.Data_Atualizacao}
+                li
+                    b Número de Intervenções: 
+                    | #{planta.Nr_Intervencoes}
+                
+        footer.w3-container.w3-cyan
+            address 
+                | EngWeb2024::a95454::#{data}::
+                a(href="/") Return

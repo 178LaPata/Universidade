@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  .w3-card-4
+  header.w3-container.w3-pink
+    h1= title
+  .w3-container
+    table.w3-table-all
+      tr
+        th ID 
+        th Nome 
+        th GitLink
+        th Ações
+      each al in lista
+        tr
+          td
+            a(href="/alunos/" + al.id) #{al.id}
+          td=al.nome
+          td
+            a(href= al.gitlink) #{al.gitlink}
+          td
+            a.w3-button.w3-blue(href="alunos/edit/" + al.id) Editar 
+            a.w3-button.w3-red(href="alunos/delete/" + al.id) Apagar 
+
+  footer.w3-container.w3-pink
+    address Gerado por EngWeb2024 em #{data}

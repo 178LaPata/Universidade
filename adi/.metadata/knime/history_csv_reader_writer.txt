@@ -1,0 +1,10 @@
+/Users/lapata/Desktop/adi/ADI_Project/input/ilp.csv
+/Users/lapata/Desktop/adi/ADI_Project/input/car_price_prediction.csv
+/Users/lapata/Downloads/adi trabalhos/ADI_Project-main/economy.csv
+/Users/lapata/Downloads/adi trabalhos/ADI_Project-main/business.csv
+/Users/lapata/Desktop/adi/aula11/flights_delay.csv
+/Users/lapata/Desktop/adi/aula9/moon/moon_or_not_moon_train.csv
+/Users/lapata/Desktop/adi/aula9/moon/moon_or_not_moon_test.csv
+/Users/lapata/Desktop/adi/aula9/iris_data.csv
+/Users/lapata/Downloads/bike+sharing+dataset/hour.csv
+/Users/lapata/Downloads/bike+sharing+dataset/day.csv

@@ -1,0 +1,12 @@
+{
+  "version" : "5.2.3.v202403211026",
+  "projects" : [ {
+    "name" : "dataset_escolhido",
+    "active" : true,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "ADI_Project/dataset_escolhido"
+    }
+  } ]
+}

@@ -9,7 +9,7 @@ typedef struct lligada {
 typedef struct nodo {
     int valor;
     struct nodo *pai, *esq, *dir;
-} *ABin;m
+} *ABin;
 
 // 1
 int paresImpares(int v[], int N){

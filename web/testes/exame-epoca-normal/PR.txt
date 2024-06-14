@@ -1,0 +1,65 @@
+1.1.
+
+Após analizar o dataset, fiz um script em python para alterar remover os espaços de alguns campos. Como o dataset dado não possui o _id necessário para a base de dados ser suportada no mongodb, alterei o Id que tinha no dataset e coloquei _id.
+Utilizei o seguinte comando para importar o dataset para o mongodb:
+
+    mongoimport --db plantas --collection plantas --file plantas.json --jsonArray
+
+1.2.
+
+1. Quantos registos estão na base de dados;
+db.plantas.countDocuments() / db.plantas.find({}).count()
+
+2. Quantos registos de plantação se encontram na freguesia "São Domingos de Rana"?
+db.plantas.find({"Freguesia": "São Domingos de Rana"}).count()
+
+3. Qual a lista de freguesias (ordenada alfabeticamente e sem repetições)? 
+db.plantas.distinct("Freguesia")
+
+4. Qual a distribuição dos registos por freguesia (quantos registos em cada freguesia)
+db.plantas.aggregate([{"$group": {"_id": "$Freguesia", count: { $sum:1}}}])
+
+5. Qual a distribuição dos registos por espécie?
+db.plantas.aggregate([{"$group": {"_id": "$Especie", count: { $sum:1}}},{"$sort": {"_id": 1}}])
+
+1.3. Instruçoes de utilização 
+
+EX1
+
+Na criação da API utilizei os seguintes comandos:
+    express --no-view ex1
+    cd ex1
+    npm i 
+    npm i mongoose --save 
+
+Para executar a API utilizei o comando:
+    npm start
+
+Depois construi a API de dados da seguinte forma:
+
+    1. Alterei a porta de entrada, para a porta pedida no enunciado (Ficheiro www da pasta bin)
+    2. Alterei a app.js para fazer a conexão com o mongodb
+    3. Criei as pastas models e controllers 
+    4. Criei o model: Possui os modelos dos objetos existentes na bd.
+    5. Criei o controller: Possui os controllers necessários para alterar os registos existentes na base de dados (Operações de CRUD)
+    6. Criei as routes, tal como aparece no enunciado, para aceder aos registos na bd
+    7. Testei as rotas criadas utilizando o browser e o Postman
+
+EX2
+
+Na criação da Interface utilizei os seguintes comandos:
+    express --view=pug ex2
+    cd ex2
+    npm i 
+    npm i axios --save 
+
+Para executar a Interface utilizei o comando:
+    npm start
+
+Depois construi a Interface de dados da seguinte forma:
+
+    1. Alterei a porta de entrada, para a porta pedida no enunciado (Ficheiro www da pasta bin)
+    2. Criei a pasta controllers (Controllers contêm os controlos da bd feitos de forma "remota" utilizando o axios para fazer pedidos a API de dados que se encontra a funcionar noutra porta)
+    3. Criei o controller: Possui os controllers necessários para alterar os registos existentes na base de dados (Operações de CRUD) - Utiliza o AXIOS
+    4. Criei as routes pedidas no enunciado para serem utilizadas pelo utilizador
+    5. Criei as views utilizando o w3.css e o pug
